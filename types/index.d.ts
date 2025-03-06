@@ -52,11 +52,7 @@ export type SubscriptionPlan = {
   prices: {
     monthly: number;
     yearly: number;
-  };
-  stripeIds: {
-    monthly: string | null;
-    yearly: string | null;
-  };
+  }
 };
 
 export type UserSubscriptionPlan = SubscriptionPlan &

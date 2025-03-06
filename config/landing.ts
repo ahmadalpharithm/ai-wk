@@ -2,51 +2,51 @@ import { FeatureLdg, InfoLdg, TestimonialType } from "types";
 
 export const infos: InfoLdg[] = [
   {
-    title: "Empower your projects",
+    title: "Power Your AI Innovations",
     description:
-      "Unlock the full potential of your projects with our open-source SaaS platform. Collaborate seamlessly, innovate effortlessly, and scale limitlessly.",
-    image: "/_static/illustrations/work-from-home.jpg",
+      "Leverage cutting-edge AI models to accelerate your projects. Train, fine-tune, and deploy models effortlessly with AI-WK’s powerful infrastructure.",
+      image: "/_static/illustrations/work-from-home.jpg",
     list: [
       {
-        title: "Collaborative",
-        description: "Work together with your team members in real-time.",
+        title: "Versatile",
+        description: "Access a diverse range of AI models for various use cases.",
         icon: "laptop",
       },
       {
-        title: "Innovative",
-        description: "Stay ahead of the curve with access constant updates.",
-        icon: "settings",
+        title: "Optimized",
+        description: "Utilize pre-trained models or fine-tune for better performance.",
+        icon: "search",
       },
       {
         title: "Scalable",
         description:
-          "Our platform offers the scalability needed to adapt to your needs.",
-        icon: "search",
+          "Deploy AI solutions that scale with your business needs.",
+        icon: "settings",
       },
     ],
   },
   {
-    title: "Seamless Integration",
+    title: "Seamless AI Model Integration",
     description:
-      "Integrate our open-source SaaS seamlessly into your existing workflows. Effortlessly connect with your favorite tools and services for a streamlined experience.",
-    image: "/_static/illustrations/work-from-home.jpg",
+      "Effortlessly integrate AI models into your workflows. Connect AI-WK with your existing tools to streamline automation and enhance decision-making.",
+      image: "/_static/illustrations/work-from-home.jpg",
     list: [
       {
         title: "Flexible",
         description:
-          "Customize your integrations to fit your unique requirements.",
-        icon: "laptop",
+          "Customize AI models to fit your specific requirements.",
+          icon: "laptop",
       },
       {
         title: "Efficient",
-        description: "Streamline your processes and reducing manual effort.",
+        description: "Reduce manual effort with intelligent automation.",
         icon: "search",
       },
       {
         title: "Reliable",
         description:
-          "Rely on our robust infrastructure and comprehensive documentation.",
-        icon: "settings",
+          "Run AI models on a robust, high-performance infrastructure.",
+          icon: "settings",
       },
     ],
   },
@@ -58,21 +58,21 @@ export const features: FeatureLdg[] = [
     description:
       "Amet praesentium deserunt ex commodi tempore fuga voluptatem. Sit, sapiente.",
     link: "/",
-    icon: "nextjs",
+    icon: "laptop",
   },
   {
     title: "Feature 2",
     description:
       "Amet praesentium deserunt ex commodi tempore fuga voluptatem. Sit, sapiente.",
     link: "/",
-    icon: "google",
+    icon: "laptop",
   },
   {
     title: "Feature 3",
     description:
       "Amet praesentium deserunt ex commodi tempore fuga voluptatem. Sit, sapiente.",
     link: "/",
-    icon: "gitHub",
+    icon: "laptop",
   },
   {
     title: "Feature 4",
@@ -86,65 +86,65 @@ export const features: FeatureLdg[] = [
     description:
       "Amet praesentium deserunt ex commodi tempore fuga voluptatem. Sit, sapiente.",
     link: "/",
-    icon: "user",
+    icon: "laptop",
   },
   {
     title: "Feature 6",
     description:
       "Amet praesentium deserunt ex commodi tempore fuga voluptatem. Sit, sapiente.",
     link: "/",
-    icon: "copy",
+    icon: "laptop",
   },
 ];
 
 export const testimonials: TestimonialType[] = [
   {
     name: "John Doe",
-    job: "Full Stack Developer",
+    job: "Machine Learning Engineer",
     image: "https://randomuser.me/api/portraits/men/1.jpg",
     review:
-      "The next-saas-stripe-starter repo has truly revolutionized my development workflow. With its comprehensive features and seamless integration with Stripe, I've been able to build and deploy projects faster than ever before. The documentation is clear and concise, making it easy to navigate through the setup process. I highly recommend next-saas-stripe-starter to any developer.",
+      "AI-WK has completely transformed the way I work with AI models. The seamless access to multiple AI frameworks allows me to experiment and deploy solutions faster than ever. Highly recommended for AI professionals!",
   },
   {
     name: "Alice Smith",
-    job: "UI/UX Designer",
+    job: "AI Researcher",
     image: "https://randomuser.me/api/portraits/women/2.jpg",
     review:
-      "Thanks to next-saas-stripe-starter, I've been able to create modern and attractive user interfaces in record time. The starter kit provides a solid foundation for building sleek and intuitive designs, allowing me to focus more on the creative aspects of my work.",
+      "AI-WK provides an incredible environment for testing and fine-tuning AI models. The intuitive UI and powerful backend make it easy to work with different AI architectures without hassle.",
   },
   {
     name: "David Johnson",
     job: "DevOps Engineer",
     image: "https://randomuser.me/api/portraits/men/3.jpg",
     review:
-      "Thanks to next-saas-stripe-starter, I was able to streamline the entire process and get payments up and running in no time. ",
+      "Deploying AI models has never been this simple. AI-WK streamlines the process, ensuring smooth integration and scaling with minimal effort.",
   },
   {
     name: "Michael Wilson",
-    job: "Project Manager",
+    job: "Data Scientist",
     image: "https://randomuser.me/api/portraits/men/5.jpg",
     review:
-      "I'm impressed by the quality of code and clear documentation of next-saas-stripe-starter. Kudos to the team!",
+      "AI-WK offers an amazing suite of AI models, making data analysis and predictive modeling incredibly efficient. The platform's speed and reliability are top-notch.",
   },
   {
     name: "Sophia Garcia",
-    job: "Data Analyst",
+    job: "AI Product Manager",
     image: "https://randomuser.me/api/portraits/women/6.jpg",
     review:
-      "next-saas-stripe-starter provided me with the tools I needed to efficiently manage user data. Thank you so much!",
+      "Managing AI-powered applications is so much easier with AI-WK. The platform’s flexibility and support for various AI models make it a must-have tool for AI-driven businesses.",
   },
   {
     name: "Emily Brown",
-    job: "Marketing Manager",
+    job: "Marketing Analyst",
     image: "https://randomuser.me/api/portraits/women/4.jpg",
     review:
-      "next-saas-stripe-starter has been an invaluable asset in my role as a marketing manager. With its seamless integration with Stripe, I've been able to launch targeted marketing campaigns with built-in payment functionality, allowing us to monetize our products and services more effectively.",
+      "AI-WK has enabled me to leverage AI-powered insights for marketing campaigns. From customer segmentation to trend prediction, the AI models have given our team a competitive edge.",
   },
   {
     name: "Jason Stan",
-    job: "Web Designer",
+    job: "AI Developer",
     image: "https://randomuser.me/api/portraits/men/9.jpg",
     review:
-      "Thanks to next-saas-stripe-starter, I've been able to create modern and attractive user interfaces in record time. The starter kit provides a solid foundation for building sleek and intuitive designs, allowing me to focus more on the creative aspects of my work.",
+      "AI-WK is a game-changer for AI development. The ability to fine-tune models and deploy them with ease makes it an essential tool for AI engineers.",
   },
 ];
