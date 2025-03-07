@@ -1,7 +1,5 @@
 import Link from "next/link";
 import * as React from "react";
-
-import { CustomerPortalButton } from "@/components/forms/customer-portal-button";
 import { buttonVariants } from "@/components/ui/button";
 import {
   Card,
@@ -47,13 +45,9 @@ export function BillingInfo({ userSubscriptionPlan }: BillingInfoProps) {
           </p>
         ) : null}
 
-        {isPaid && stripeCustomerId ? (
-          <CustomerPortalButton userStripeId={stripeCustomerId} />
-        ) : (
           <Link href="/pricing" className={cn(buttonVariants())}>
             Choose a plan
           </Link>
-        )}
       </CardFooter>
     </Card>
   );

@@ -4,7 +4,7 @@ function PaymentPage() {
   return (
     <div className="flex w-full flex-col gap-16 py-8 md:py-8 md:px-24">
     <hr className="container" />
-        Payment Page
+        Payments Page
     </div>
   )
 }

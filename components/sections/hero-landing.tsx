@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { siteConfig } from "@/config/site";
 import { cn } from "@/lib/utils";
 import { buttonVariants } from "@/components/ui/button";
 import { Icons } from "@/components/shared/icons";
@@ -10,16 +9,14 @@ export default async function HeroLanding() {
     <section className="space-y-6 py-12 sm:py-20 lg:py-20">
       <div className="container flex max-w-5xl flex-col items-center gap-5 text-center">
         <Link
-          href="https://twitter.com/"
+          href="/models"
           className={cn(
             buttonVariants({ variant: "outline", size: "sm", rounded: "full" }),
             "px-4",
           )}
-          target="_blank"
         >
           <span className="mr-3">🎉</span>
-          <span className="hidden md:flex">Introducing&nbsp;</span> Next Auth
-          Roles Template on <Icons.twitter className="ml-2 size-3.5" />
+          <span className="hidden md:flex">Introducing&nbsp;</span> Modern AI Models
         </Link>
 
         <h1 className="text-balance font-urban text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-[66px]">
@@ -28,7 +25,6 @@ export default async function HeroLanding() {
             ai-wk
           </span>
         </h1>
-
         <p
           className="max-w-2xl text-balance leading-normal text-muted-foreground sm:text-xl sm:leading-8"
           style={{ animationDelay: "0.35s", animationFillMode: "forwards" }}
@@ -36,7 +32,6 @@ export default async function HeroLanding() {
              AI-WK empowers developers and businesses with cutting-edge AI models. 
              Fine-tune, integrate, and scale AI solutions effortlessly.
         </p>
-
         <div
           className="flex justify-center space-x-2 md:space-x-4"
           style={{ animationDelay: "0.4s", animationFillMode: "forwards" }}
@@ -53,8 +48,7 @@ export default async function HeroLanding() {
             <Icons.arrowRight className="size-4" />
           </Link>
           <Link
-            href={siteConfig.links.github}
-            target="_blank"
+            href={"/models"}
             rel="noreferrer"
             className={cn(
               buttonVariants({
@@ -65,10 +59,9 @@ export default async function HeroLanding() {
               "px-5",
             )}
           >
-            <Icons.gitHub className="mr-2 size-4" />
-            <p>
-              <span className="hidden sm:inline-block">Star on</span> GitHub{" "}
-              <span className="font-semibold">5</span>
+            <p className="flex justify-center items-center gap-1">
+              <span className="hidden sm:inline-block">Explore Models</span>
+              <Icons.arrowRight className="size-4" />
             </p>
           </Link>
         </div>

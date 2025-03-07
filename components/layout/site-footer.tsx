@@ -1,15 +1,15 @@
 import * as React from "react";
 import Link from "next/link";
-import { footerLinks, siteConfig } from "@/config/site";
+import { footerLinks } from "@/config/site";
 import { cn } from "@/lib/utils";
 import { ModeToggle } from "@/components/layout/mode-toggle";
 import { NewsletterForm } from "../forms/newsletter-form";
-import { Icons } from "../shared/icons";
+
 
 export function SiteFooter({ className }: React.HTMLAttributes<HTMLElement>) {
   return (
     <footer className={cn("border-t", className)}>
-      <div className="container grid max-w-6xl grid-cols-2 gap-6 py-14 md:grid-cols-5">
+      <div className="container grid max-w-6xl grid-cols-2 gap-6 py-4 md:grid-cols-5">
         {footerLinks.map((section) => (
           <div key={section.title}>
             <span className="text-sm font-medium text-foreground">
@@ -33,21 +33,12 @@ export function SiteFooter({ className }: React.HTMLAttributes<HTMLElement>) {
           <NewsletterForm />
         </div>
       </div>
-
       <div className="border-t py-4">
         <div className="container flex max-w-6xl items-center justify-between">
           <span className="text-sm backdrop:text-muted-foreground ">
             Copyright &copy; {new Date().getFullYear()}. All rights reserved.
           </span>
           <div className="flex items-center gap-3">
-            <Link
-              href={siteConfig.links.github}
-              target="_blank"
-              rel="noreferrer"
-              className="font-medium underline underline-offset-4"
-            >
-              <Icons.gitHub className="size-5" />
-            </Link>
             <ModeToggle />
           </div>
         </div>

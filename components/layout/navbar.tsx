@@ -3,7 +3,6 @@
 import { useContext } from "react";
 import Link from "next/link";
 import { useSelectedLayoutSegment } from "next/navigation";
-import { docsConfig } from "@/config/docs";
 import { marketingConfig } from "@/config/navLinks";
 import { siteConfig } from "@/config/site";
 import { cn } from "@/lib/utils";
@@ -12,6 +11,8 @@ import { Button } from "@/components/ui/button";
 import { ModalContext } from "@/components/modals/providers";
 import { Icons } from "@/components/shared/icons";
 import MaxWidthWrapper from "@/components/shared/max-width-wrapper";
+import { ModeToggle } from "@/components/layout/mode-toggle";
+
 
 interface NavBarProps {
   scroll?: boolean;
@@ -25,12 +26,10 @@ export function NavBar({ scroll = false }: NavBarProps) {
   const selectedLayout = useSelectedLayoutSegment();
   const documentation = selectedLayout === "docs";
 
-  const configMap = {
-    docs: docsConfig.mainNav,
-  };
+
 
   const links =
-    (selectedLayout && configMap[selectedLayout]) || marketingConfig.mainNav;
+    marketingConfig.mainNav;
 
   return (
     <header
@@ -73,6 +72,10 @@ export function NavBar({ scroll = false }: NavBarProps) {
         </div>
 
         <div className="flex items-center space-x-3">
+          <div className="hidden md:flex">
+          <ModeToggle />
+          </div>
+  
           {/* right header for docs */}
             <Button
               className="hidden gap-2 px-5 md:flex"

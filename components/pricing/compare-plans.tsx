@@ -1,6 +1,5 @@
 import { PlansRow } from "@/types";
 import { CircleCheck, Info } from "lucide-react";
-
 import { comparePlans, plansColumns } from "@/config/subscriptions";
 import {
   Popover,

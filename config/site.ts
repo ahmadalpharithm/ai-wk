@@ -26,13 +26,13 @@ export const footerLinks: SidebarNavItem[] = [
   {
     title: "Product",
     items: [
-      { title: "Subscription", href: "#" },
+      { title: "Subscriptions", href: "#" },
     ],
   },
   {
     title: "Terms",
     items: [
-      { title: "Payment", href: "#" },
+      { title: "Payments", href: "#" },
     ],
   },
 ];

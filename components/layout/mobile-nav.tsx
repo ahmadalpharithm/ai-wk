@@ -2,9 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { useSelectedLayoutSegment } from "next/navigation";
 import { Menu, X } from "lucide-react";
-import { docsConfig } from "@/config/docs";
 import { marketingConfig } from "@/config/navLinks";
 import { siteConfig } from "@/config/site";
 import { cn } from "@/lib/utils";
@@ -13,14 +11,11 @@ import { ModeToggle } from "./mode-toggle";
 
 export function NavMobile() {
   const [open, setOpen] = useState(false);
-  const selectedLayout = useSelectedLayoutSegment();
 
-  const configMap = {
-    docs: docsConfig.mainNav,
-  };
+
 
   const links =
-    (selectedLayout && configMap[selectedLayout]) || marketingConfig.mainNav;
+    marketingConfig.mainNav;
 
   // prevent body scroll when modal is open
   useEffect(() => {
@@ -88,10 +83,6 @@ export function NavMobile() {
         </ul>
 
         <div className="mt-5 flex items-center justify-end space-x-4">
-          <Link href={siteConfig.links.github} target="_blank" rel="noreferrer">
-            <Icons.gitHub className="size-6" />
-            <span className="sr-only">GitHub</span>
-          </Link>
           <ModeToggle />
         </div>
       </nav>
