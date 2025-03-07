@@ -12,7 +12,8 @@ import { ModalContext } from "@/components/modals/providers";
 import { Icons } from "@/components/shared/icons";
 import MaxWidthWrapper from "@/components/shared/max-width-wrapper";
 import { ModeToggle } from "@/components/layout/mode-toggle";
-
+import Image from "next/image"
+import { logo } from "../../assets";
 
 interface NavBarProps {
   scroll?: boolean;
@@ -43,7 +44,7 @@ export function NavBar({ scroll = false }: NavBarProps) {
       >
         <div className="flex gap-6 md:gap-10">
           <Link href="/" className="flex items-center space-x-1.5">
-            <Icons.logo />
+          <Image src={logo} height={40} width={40} alt="logo" className="flex justify-center items-center rounded-full"/>
             <span className="font-urban text-xl font-bold">
               {siteConfig.name}
             </span>
@@ -75,7 +76,6 @@ export function NavBar({ scroll = false }: NavBarProps) {
           <div className="hidden md:flex">
           <ModeToggle />
           </div>
-  
           {/* right header for docs */}
             <Button
               className="hidden gap-2 px-5 md:flex"
