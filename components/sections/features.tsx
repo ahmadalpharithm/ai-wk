@@ -1,5 +1,4 @@
 import Link from "next/link";
-
 import { features } from "@/config/landing";
 import { Button } from "@/components/ui/button";
 import { HeaderSection } from "@/components/shared/header-section";

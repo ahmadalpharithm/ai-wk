@@ -2,6 +2,7 @@ import { User } from "@prisma/client";
 import type { Icon } from "lucide-react";
 
 import { Icons } from "@/components/shared/icons";
+import { StaticImageData } from "next/image";
 
 export type SiteConfig = {
   name: string;
@@ -95,4 +96,12 @@ export type TestimonialType = {
   job: string;
   image: string;
   review: string;
+};
+
+export type ModelsType = {
+  id? : string
+  title: string;
+  description?: string;
+  link?: string;
+  image: StaticImageData;
 };
