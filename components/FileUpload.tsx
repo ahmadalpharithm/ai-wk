@@ -45,7 +45,7 @@ function FileUpload() {
   const { getRootProps, getInputProps } = useDropzone({
     onDrop,
     // @ts-ignore
-    accept: "image/png, image/jpeg, application/pdf",
+    accept: "application/pdf",
     multiple: false,
   });
 
@@ -60,7 +60,7 @@ function FileUpload() {
       </g>
       </svg>
           <h2 className="text-center text-gray-400 text-xs leading-4">
-            PNG, JPG, or PDF, smaller than 10MB
+            PDFs, smaller than 10MB each. Ensure the ticker name is in the file name
           </h2>
           <h4 className="text-center text-gray-900 text-sm font-medium leading-snug">
             Drag and Drop your file here or Click to Browse

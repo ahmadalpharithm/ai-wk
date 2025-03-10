@@ -9,19 +9,8 @@ import FileUpload from '@/components/FileUpload';
 
 function OrionModelPage() {
   return (
-    <div className="container px-6 flex h-screen w-screen flex-col items-center justify-center">
-    <Link
-      href="/models"
-      className={cn(
-        buttonVariants({ variant: "outline", size: "sm" }),
-        "absolute left-4 top-24 md:left-36 md:top-24",
-      )}
-    >
-      <>
-        <Icons.chevronLeft className="mr-2 size-4" />
-        Back
-      </>
-    </Link>
+    <div className="container px-6 py-24 flex w-screen flex-col items-center justify-center">
+
     <div className="mx-auto flex w-full flex-col justify-center space-y-6 sm:w-[550px]">
       <div className="flex flex-col space-y-2 text-center">
         <h1 className="text-2xl font-semibold tracking-tight">
@@ -33,11 +22,11 @@ function OrionModelPage() {
             <div className="grid gap-4">
               <div className="grid gap-2">
                 <Label htmlFor="text">
-                Enter tickers to Investigate
+                Ticker(s):
                 </Label>
                 <Input
                   id="text"
-                  placeholder="Enter tickers value here"
+                  placeholder="e.g APL,AMZN"
                   type="text"
                   autoCapitalize="none"
                   autoCorrect="on"
@@ -45,13 +34,7 @@ function OrionModelPage() {
               </div>
               <div className="grid gap-2">
                 <Label htmlFor="text">
-                Optional Upload - earnings scripts if happened less than 24 hours
-                </Label>
-                <FileUpload/>
-              </div>
-              <div className="grid gap-2">
-                <Label htmlFor="text">
-                Optional Upload - research reports
+                Upload research reports:
                 </Label>
                 <FileUpload/>
               </div>
