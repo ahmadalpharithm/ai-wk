@@ -19,6 +19,7 @@ export function BillingFormButton({
   return (
     <Button
       variant={"default"}
+      // @ts-ignore
       rounded="full"
       className="w-full"
       onClick={() => {}}

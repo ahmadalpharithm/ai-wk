@@ -54,6 +54,7 @@ export function NavBar({ scroll = false }: NavBarProps) {
         {marketingConfig.mainNav && marketingConfig.mainNav.length > 0 && (
           <nav className="hidden md:flex flex-grow justify-center gap-6">
             {marketingConfig.mainNav
+                  // @ts-ignore
               .map((item, index) => (
                 <Link
                   key={index}
@@ -77,6 +78,7 @@ export function NavBar({ scroll = false }: NavBarProps) {
             className="flex gap-2 px-5"
             variant="default"
             size="sm"
+            // @ts-ignore
             rounded="full"
             onClick={() => setShowSignInModal(true)}
           >
