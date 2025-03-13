@@ -2,10 +2,6 @@
 
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
-import Link from "next/link";
-import { cn } from "@/lib/utils";
-import { buttonVariants } from "@/components/ui/button";
-import { Icons } from "@/components/shared/icons";
 import { newHeroImage } from '@/assets';
 import { caroImage2, caroImage3 } from '@/assets/carousel';
 
