@@ -3,7 +3,6 @@
 import React, { useCallback, useState } from "react";
 import { useDropzone } from "react-dropzone";
 import UploadedFile from "./UploadedFile";
-import { UploadPdfToUploadThing } from "@/actions/uploadThing";
 
 function FileUpload() {
   const [file, setFile] = useState<File | null>(null);
