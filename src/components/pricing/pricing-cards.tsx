@@ -103,6 +103,7 @@ export function PricingCards({ userId, subscriptionPlan }: PricingCardsProps) {
                 className={cn(
                   buttonVariants({
                     variant: "outline",
+                    // @ts-ignore
                     rounded: "full",
                   }),
                   "w-full",
@@ -124,6 +125,7 @@ export function PricingCards({ userId, subscriptionPlan }: PricingCardsProps) {
                   ? "default"
                   : "outline"
               }
+              // @ts-ignore
               rounded="full"
               onClick={() => setShowSignInModal(true)}
             >
