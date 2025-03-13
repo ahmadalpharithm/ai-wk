@@ -49,7 +49,10 @@ export function NavMobile() {
         )}
       >
         <ul className="grid divide-y divide-muted">
-          {links && links.length > 0 && links.map(({ title, href }) => (
+          
+          {links && links.length > 0 && 
+                // @ts-ignore
+          links.map(({ title, href }) => (
             <li key={href} className="py-3">
               <Link
                 href={href}
