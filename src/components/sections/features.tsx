@@ -42,6 +42,7 @@ export default function Features() {
                       <Button
                         variant="secondary"
                         size="sm"
+                        // @ts-ignore
                         rounded="xl"
                         className="px-4"
                       >
