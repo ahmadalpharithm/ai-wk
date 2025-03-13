@@ -75,7 +75,7 @@ export function NavBar({ scroll = false }: NavBarProps) {
         )}
         {/* Login Button */}
           <Button
-            className="flex gap-2 px-5"
+            className="hidden md:flex gap-2 px-5"
             variant="default"
             size="sm"
             // @ts-ignore
