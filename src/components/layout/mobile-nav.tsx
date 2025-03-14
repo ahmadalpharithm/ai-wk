@@ -8,7 +8,7 @@ import { siteConfig } from "@/config/site";
 import { cn } from "@/lib/utils";
 import { Icons } from "@/components/shared/icons";
 import { ModeToggle } from "./mode-toggle";
-
+import { newLogo } from "@/assets";
 export function NavMobile() {
   const [open, setOpen] = useState(false);
 

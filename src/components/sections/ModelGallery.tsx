@@ -15,7 +15,7 @@ function ModelGallery() {
         {/* <h3 className="font-festive z-10 absolute top-99 left-0 p-4 xs:text-xl md:text-3xl text-white text-3xl">Accountant</h3> */}
         <Link href="/models/hermes" className="relative border-2 md:top-67 border-gray-100 text-gray-100 px-6 py-3 rounded-lg overflow-hidden group">
             <span className="absolute inset-0 bg-gray-800 transform -translate-x-full group-hover:translate-x-0 transition duration-300" />
-            <span className="relative z-10 font-bold flex justify-center items-center group-hover:text-white">
+            <span className="relative z-10 font-bold flex whitespace-nowrap justify-center items-center group-hover:text-white">
                 Stock Trader
             </span>
         </Link>
@@ -27,7 +27,7 @@ function ModelGallery() {
           <div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5" />
           <Link href="/models/orion" className="relative border-2 md:top-67 border-gray-100 text-gray-100 px-6 py-3 rounded-lg overflow-hidden group">
             <span className="absolute inset-0 bg-gray-800 transform -translate-x-full group-hover:translate-x-0 transition duration-300" />
-            <span className="relative z-10 font-bold flex justify-center items-center group-hover:text-white">
+            <span className="relative z-10  whitespace-nowrap font-bold flex justify-center items-center group-hover:text-white">
                 Investment Analyst
             </span>
         </Link>
@@ -39,7 +39,7 @@ function ModelGallery() {
           <div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5" />
           <Link href="/models/olympus" className="relative border-2 md:top-67 border-gray-100 text-gray-100 px-6 py-3 rounded-lg overflow-hidden group">
             <span className="absolute inset-0 bg-gray-800 transform -translate-x-full group-hover:translate-x-0 transition duration-300" />
-            <span className="relative z-10 font-bold flex justify-center items-center group-hover:text-white">
+            <span className="relative z-10  whitespace-nowrap font-bold flex justify-center items-center group-hover:text-white">
                 Market Simulation
             </span>
         </Link>
@@ -51,7 +51,7 @@ function ModelGallery() {
           <div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5" />
           <Link href="/models/luca" className="relative border-2 md:top-67 border-gray-100 text-gray-100 px-6 py-3 rounded-lg overflow-hidden group">
             <span className="absolute inset-0 bg-gray-800 transform -translate-x-full group-hover:translate-x-0 transition duration-300" />
-            <span className="relative z-10 font-bold flex justify-center items-center group-hover:text-white">
+            <span className="relative z-10  whitespace-nowrap font-bold flex justify-center items-center group-hover:text-white">
                 Accountant
             </span>
         </Link>
@@ -63,7 +63,7 @@ function ModelGallery() {
           <div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5" />
           <Link href="/models/douglas" className="relative border-2 md:top-67 border-gray-100 text-gray-100 px-6 py-3 rounded-lg overflow-hidden group">
             <span className="absolute inset-0 bg-gray-800 transform -translate-x-full group-hover:translate-x-0 transition duration-300" />
-            <span className="relative z-10 font-bold flex justify-center items-center group-hover:text-white">
+            <span className="relative z-10  whitespace-nowrap font-bold flex justify-center items-center group-hover:text-white">
                 Presenter
             </span>
         </Link>

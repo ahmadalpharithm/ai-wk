@@ -14,6 +14,7 @@ import MaxWidthWrapper from "@/components/shared/max-width-wrapper";
 import Image from "next/image";
 import { logo, logo2 } from "../../assets";
 import { useTheme } from "next-themes";
+import { newLogo } from "../../assets";
 
 interface NavBarProps {
   scroll?: boolean;
@@ -41,7 +42,7 @@ export function NavBar({ scroll = false }: NavBarProps) {
         {/* Logo */}
         <Link href="/" className="flex items-center space-x-1.5">
           <Image
-            src={appLogo}
+            src={newLogo}
             height={40}
             width={40}
             alt="logo"

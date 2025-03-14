@@ -17,7 +17,7 @@ function OlympusPage() {
               muted
               loop
             >
-              <source src="/videos/lucaVid.mp4" type="video/mp4" />
+              <source src="/videos/olympusVid.mp4" type="video/mp4" />
             </video>
           </div>
           <div className="xl:w-[80%] lg:w-[90%] md:w-[94%] sm:w-[96%] w-[92%] mx-auto flex flex-col gap-4 justify-center items-center relative xl:-top-[6rem] lg:-top-[6rem] md:-top-[4rem] sm:-top-[3rem] -top-[2.2rem]">
