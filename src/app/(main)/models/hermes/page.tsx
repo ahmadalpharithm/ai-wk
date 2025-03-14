@@ -7,10 +7,10 @@ function HermesModelPage() {
     <PagesWrapper>
             <section className="w-full overflow-hidden dark:bg-gray-900">
             <div className="w-full mx-auto">
-              {/* User Cover IMAGE */}
-              <div className="w-full xl:h-[20rem] lg:h-[22rem] md:h-[16rem] sm:h-[13rem] h-[9.5rem] object-fill" />
+              {/* User Cover IMAGE
+              <div className="w-full xl:h-[20rem] lg:h-[22rem] md:h-[16rem] sm:h-[13rem] h-[9.5rem] object-fill" /> */}
               {/* User Profile Image */}
-              <div className="w-full mx-auto flex justify-center">
+              <div className="w-full mx-auto flex mt-32 justify-center">
                 <video
                   className="rounded-full object-cover xl:w-[16rem] xl:h-[16rem] lg:w-[16rem] lg:h-[16rem] md:w-[12rem] md:h-[12rem] sm:w-[10rem] sm:h-[10rem] w-[8rem] h-[8rem] outline-2 outline-offset-2 outline-green-500 shadow-xl relative xl:bottom-[7rem] lg:bottom-[8rem] md:bottom-[6rem] sm:bottom-[5rem] bottom-[4.3rem]"
                   autoPlay
