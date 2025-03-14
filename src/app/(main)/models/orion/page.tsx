@@ -8,7 +8,7 @@ function OrionPage() {
         <section className="w-full overflow-hidden dark:bg-gray-900">
         <div className="w-full mx-auto">
           {/* User Cover IMAGE */}
-          <div className="w-full bg-indigo-900 xl:h-[20rem] lg:h-[22rem] md:h-[16rem] sm:h-[13rem] h-[9.5rem] object-fill" />
+          <div className="w-full xl:h-[20rem] lg:h-[22rem] md:h-[16rem] sm:h-[13rem] h-[9.5rem] object-fill" />
           {/* User Profile Image */}
           <div className="w-full mx-auto flex justify-center">
             <video

@@ -5,6 +5,9 @@ import ModalProvider from "@/components/modals/providers";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
+import { Festive } from "next/font/google";
+
+const festive = Festive({ subsets: ["latin"], weight: "400", variable: "--font-festive" });
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,7 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${festive.variable}  antialiased`}
       >
         <div>
 

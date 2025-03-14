@@ -11,11 +11,13 @@ import { PricingFaq } from "@/components/pricing/pricing-faq";
 // import DouglasModelHero from "@/components/Heros/DouglasModelHero";
 // import OlympusModelHero from "@/components/Heros/OlympusModelHero";
 import NewHeroSection from "@/components/sections/NewHeroSection";
+import ModelGallery from "@/components/sections/ModelGallery";
 
 export default function IndexPage() {
   return (
     <>
       <NewHeroSection/>
+      <ModelGallery/>
       <div className="px-4 md:px-20 flex flex-col justify-center items-center">
       <BentoGrid />
       <Features />

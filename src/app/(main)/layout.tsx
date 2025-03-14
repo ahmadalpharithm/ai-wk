@@ -13,7 +13,6 @@ export default function MarketingLayout({ children }: MarketingLayoutProps) {
       <NavMobile />
       <NavBar scroll={true} />
       <div className="min-h-screen">{children}</div>
-      
       <SiteFooter />
     </div>
   );

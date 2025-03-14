@@ -124,3 +124,8 @@
     @apply bg-background text-foreground;
   }
 }
+
+
+.font-festive {
+  font-family: var(--font-festive), cursive;
+}
