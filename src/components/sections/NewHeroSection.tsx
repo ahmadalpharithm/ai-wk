@@ -50,7 +50,7 @@ function NewHeroSection() {
                 <h1 className="text-balance font-urban text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-[66px]">
                   LET AI WORK FOR YOU
                 </h1>
-                <p className="max-w-2xl text-balance leading-normal sm:text-xl sm:leading-8 transition-opacity duration-1000">
+                <p className="max-w-2xl text-xl text-balance leading-normal sm:text-2xl sm:leading-8 transition-opacity duration-1000">
                   {slide.text}
                 </p>
               </div>
