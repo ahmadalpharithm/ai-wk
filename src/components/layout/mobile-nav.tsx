@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
-import { marketingConfig } from "@/config/navLinks";
+import { mainConfig } from "@/config/navLinks";
 import { cn } from "@/lib/utils";
 export function NavMobile() {
   const [open, setOpen] = useState(false);
@@ -11,7 +11,7 @@ export function NavMobile() {
 
 
   const links =
-    marketingConfig.mainNav;
+  mainConfig.mainNav;
 
   // prevent body scroll when modal is open
   useEffect(() => {

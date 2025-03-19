@@ -3,7 +3,7 @@
 import { useContext } from "react";
 import Link from "next/link";
 import { useSelectedLayoutSegment } from "next/navigation";
-import { marketingConfig } from "@/config/navLinks";
+import { mainConfig } from "@/config/navLinks";
 import { siteConfig } from "@/config/site";
 import { cn } from "@/lib/utils";
 import { useScroll } from "@/hooks/use-scroll";
@@ -35,22 +35,22 @@ export function NavBar({ scroll = false }: NavBarProps) {
         className="flex h-14 items-center justify-between py-4"
         large={documentation}
       >
-        {/* Logo */}
-        <Link href="/" className="flex items-center space-x-1.5">
-          <Image
+
+        <Link href="/" className="inline-flex justify-start items-center gap-1.5">
+        <Image
             src={newLogo}
             height={40}
             width={40}
             alt="logo"
             className="rounded-full"
           />
-          <span className="font-urban text-xl text-white font-bold">{siteConfig.name}</span>
-        </Link>
+    <div className="justify-start text-white text-2xl font-extrabold">{siteConfig.name}</div>
+    </Link>
 
         {/* Centered Navigation Links */}
-        {marketingConfig.mainNav && marketingConfig.mainNav.length > 0 && (
+        {mainConfig.mainNav && mainConfig.mainNav.length > 0 && (
           <nav className="hidden md:flex flex-grow justify-center gap-6">
-            {marketingConfig.mainNav
+            {mainConfig.mainNav
                   // @ts-ignore
               .map((item, index) => (
                 <Link
@@ -71,19 +71,14 @@ export function NavBar({ scroll = false }: NavBarProps) {
           </nav>
         )}
         {/* Login Button */}
-        <div className="hidden md:flex gap-2">
-          <button className="relative border border-white text-white px-4 py-2 rounded-lg overflow-hidden group">
-            <span className="absolute inset-0 bg-gray-800 transform -translate-x-full group-hover:translate-x-0 transition duration-300"></span>
-            <span className="relative z-10 group-hover:text-white">
-                Login
-            </span>
+        <div className=" justify-start items-center gap-3 hidden md:inline-flex">
+          <button className="w-20 p-2.5 rounded outline outline-offset-[-1px] outline-white flex justify-center items-center gap-1">
+              <div className="justify-start text-white text-sm font-medium">Login</div>
           </button>
-          <button className="bg-white text-gray-900 px-4 py-2 rounded-md relative overflow-hidden group">
-              <span className="absolute top-0 left-0 w-full h-full bg-white opacity-20 transform -skew-x-12 -translate-x-full group-hover:translate-x-0 transition duration-500"></span>
-              <span className="relative z-10">Get Started Now</span>
+          <button className="p-2.5 bg-white rounded outline outline-offset-[-1px] outline-white flex justify-center items-center gap-1">
+              <div className="justify-start text-slate-950 text-sm font-medium">Get Started Now</div>
           </button>
         </div>
-
       </MaxWidthWrapper>
     </header>
   );

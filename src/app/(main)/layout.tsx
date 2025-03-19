@@ -12,7 +12,7 @@ export default function MarketingLayout({ children }: MarketingLayoutProps) {
     <div className="relative flex flex-col">
       <NavMobile />
       <NavBar scroll={true} />
-      <div className="relative">{children}</div> {/* Remove min-h-screen to prevent spacing */}
+      <div className="relative">{children}</div> 
       <SiteFooter />
     </div>
   );

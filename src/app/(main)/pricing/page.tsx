@@ -1,20 +1,12 @@
-import { constructMetadata } from "@/lib/utils";
-import { ComparePlans } from "@/components/pricing/compare-plans";
-// import { PricingCards } from "@/components/pricing/pricing-cards";
-
-export const metadata = constructMetadata({
-  title: "Pricing – SaaS Starter",
-  description: "Explore our subscription plans.",
-});
 
 export default async function PricingPage() {
 
 
   return (
-    <div className="flex w-full flex-col justify-center items-center gap-16 py-8 md:py-8">
-      {/* <PricingCards userId={user?.id} subscriptionPlan={subscriptionPlan} /> */}
-      <hr className="container" />
-      <ComparePlans />
+    <div className="flex w-full flex-col py-8 md:py-8 md:px-24">
+      <div className="container flex flex-col items-center justify-center w-full p-6 mx-auto text-center xl:px-0">
+        Pricing Page
+      </div>
     </div>
   );
 }
