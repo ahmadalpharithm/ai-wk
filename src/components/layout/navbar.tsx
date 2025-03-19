@@ -7,9 +7,7 @@ import { marketingConfig } from "@/config/navLinks";
 import { siteConfig } from "@/config/site";
 import { cn } from "@/lib/utils";
 import { useScroll } from "@/hooks/use-scroll";
-import { Button } from "@/components/ui/button";
 import { ModalContext } from "@/components/modals/providers";
-import { Icons } from "@/components/shared/icons";
 import MaxWidthWrapper from "@/components/shared/max-width-wrapper";
 import Image from "next/image";
 import { logo, logo2 } from "../../assets";
@@ -31,9 +29,7 @@ export function NavBar({ scroll = false }: NavBarProps) {
 
   return (
     <header
-      className={`sticky top-0 z-40 flex w-full justify-center bg-background/60 backdrop-blur-xl transition-all ${
-        scroll ? (scrolled ? "border-b" : "bg-transparent") : "border-b"
-      }`}
+      className={`absolute top-0 left-0 w-full z-50 bg-transparent flex justify-center  transition-all `}
     >
       <MaxWidthWrapper
         className="flex h-14 items-center justify-between py-4"
@@ -48,7 +44,7 @@ export function NavBar({ scroll = false }: NavBarProps) {
             alt="logo"
             className="rounded-full"
           />
-          <span className="font-urban text-xl font-bold">{siteConfig.name}</span>
+          <span className="font-urban text-xl text-white font-bold">{siteConfig.name}</span>
         </Link>
 
         {/* Centered Navigation Links */}
@@ -62,10 +58,10 @@ export function NavBar({ scroll = false }: NavBarProps) {
                   href={item.href}
                   prefetch={true}
                   className={cn(
-                    "text-lg font-medium transition-colors hover:text-foreground/80 sm:text-sm",
+                    "text-lg font-medium transition-colors text-white hover:text-foreground/80 sm:text-sm",
                     item.href.startsWith(`/${selectedLayout}`)
                       ? "text-foreground"
-                      : "text-foreground/60",
+                      : "text-white",
                     item.disabled && "cursor-not-allowed opacity-80"
                   )}
                 >
@@ -75,17 +71,19 @@ export function NavBar({ scroll = false }: NavBarProps) {
           </nav>
         )}
         {/* Login Button */}
-          <Button
-            className="hidden md:flex gap-2 px-5"
-            variant="default"
-            size="sm"
-            // @ts-ignore
-            rounded="full"
-            onClick={() => setShowSignInModal(true)}
-          >
-            <span>Login</span>
-            <Icons.arrowRight className="size-4" />
-          </Button>
+        <div className="hidden md:flex gap-2">
+          <button className="relative border border-white text-white px-4 py-2 rounded-lg overflow-hidden group">
+            <span className="absolute inset-0 bg-gray-800 transform -translate-x-full group-hover:translate-x-0 transition duration-300"></span>
+            <span className="relative z-10 group-hover:text-white">
+                Login
+            </span>
+          </button>
+          <button className="bg-white text-gray-900 px-4 py-2 rounded-md relative overflow-hidden group">
+              <span className="absolute top-0 left-0 w-full h-full bg-white opacity-20 transform -skew-x-12 -translate-x-full group-hover:translate-x-0 transition duration-500"></span>
+              <span className="relative z-10">Get Started Now</span>
+          </button>
+        </div>
+
       </MaxWidthWrapper>
     </header>
   );

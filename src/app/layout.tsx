@@ -35,11 +35,9 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} ${festive.variable}  antialiased`}
       >
         <div>
-
           <ModalProvider>
           <main className="flex flex-col min-h-screen">{children}</main>
           </ModalProvider>
-        
         </div>
       </body>
     </html>

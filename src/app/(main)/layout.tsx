@@ -9,10 +9,10 @@ interface MarketingLayoutProps {
 
 export default function MarketingLayout({ children }: MarketingLayoutProps) {
   return (
-    <div className="flex flex-col">
+    <div className="relative flex flex-col">
       <NavMobile />
       <NavBar scroll={true} />
-      <div className="min-h-screen">{children}</div>
+      <div className="relative">{children}</div> {/* Remove min-h-screen to prevent spacing */}
       <SiteFooter />
     </div>
   );

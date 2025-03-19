@@ -4,11 +4,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import { marketingConfig } from "@/config/navLinks";
-import { siteConfig } from "@/config/site";
 import { cn } from "@/lib/utils";
-import { Icons } from "@/components/shared/icons";
-import { ModeToggle } from "./mode-toggle";
-import { newLogo } from "@/assets";
 export function NavMobile() {
   const [open, setOpen] = useState(false);
 
@@ -66,8 +62,7 @@ export function NavMobile() {
             <>
               <li className="py-3">
                 <Link
-                  href="/login"
-                  onClick={() => setOpen(false)}
+                  href="#"
                   className="flex w-full font-medium capitalize"
                 >
                   Login
@@ -75,19 +70,14 @@ export function NavMobile() {
               </li>
               <li className="py-3">
                 <Link
-                  href="/register"
-                  onClick={() => setOpen(false)}
+                  href="#"
                   className="flex w-full font-medium capitalize"
                 >
-                  Sign up
+                  Get Started Now
                 </Link>
               </li>
             </>
         </ul>
-
-        <div className="mt-5 flex items-center justify-end space-x-4">
-          <ModeToggle />
-        </div>
       </nav>
     </>
   );
