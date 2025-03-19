@@ -22,7 +22,7 @@ function NewHeroSection() {
               Supercharge Your Business with AI-Powered Agents
             </h2>
             <p className="max-w-md mx-auto mt-3 text-base text-white sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
-              Streamline Operations, automate tasks, and make smarter decisions all with the power of AI.
+              Streamline operations, automate tasks, and make smarter decisions all with the power of AI. Stay focused on growth while AI handles the heavy lifting.
             </p>
             <div className="mt-5 sm:flex md:mt-8 gap-2">
               <button className="px-4 py-3 text-gray-800 bg-gray-50 rounded-md md:py-2 md:text-lg">
