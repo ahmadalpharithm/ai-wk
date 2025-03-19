@@ -9,7 +9,7 @@ import { douglas, hermes, olympus, orion, luca } from '@/assets/models';
 import WorkforceComponent from '@/components/sections/WorkforceComponent';
 import MobileLandingModelCard from '@/components/sections/MobileLandingModelCard';
 import MobileWorkForceComponent from '@/components/sections/MobileWorkForceComponent';
-
+import AIBusiness from '@/components/sections/AIBusiness';
 
 const modelData = {
   "Market Simulation": {
@@ -56,6 +56,9 @@ export default function HomePage() {
         <div className='hidden md:block'>
               {/* @ts-ignore */}
         <LandingModelCard {...modelData[activeButton]} />
+        </div>
+        <div className='hidden md:block py-10'>
+          <AIBusiness/>
         </div>
         <div className='block md:hidden pb-10'>
          {/* @ts-ignore */}
