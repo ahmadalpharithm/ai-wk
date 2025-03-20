@@ -12,16 +12,16 @@ interface LandingModelCardProps {
 
 const LandingModelCard: React.FC<LandingModelCardProps> = ({ image, title, subtitle, href }) => {
   return (
-    <div className="w-[1042.17px] relative bg-stone-100 rounded-xl overflow-hidden">
+    <div className="w-[1042.17px] relative bg-stone-100 rounded-xl overflow-hidden h-[550px]">
       {/* Image Section */}
       <div className="w-[520.60px] h-[513.77px] left-[550.40px] top-[66.50px] absolute rounded-xl overflow-hidden">
         <Image src={image} width={1000} height={1000} alt={title} />
       </div>
       {/* Text Content Section */}
-      <div className="flex justify-center items-center p-10 mt-32 md:w-1/2 md:pt-10 md:pr-12">
+      <div className="flex justify-center items-center p-10 mt-32 md:w-1/2 md:pr-12">
         <div className="w-150 text-left">
-          <h4 className="text-zinc-500 text-xl font-semibold">{title}</h4>
-          <h2 className="max-w-7xl text-4xl font-semibold leading-10 tracking-tight text-slate-800 sm:text-5xl sm:leading-none md:text-5xl">
+          <h4 className="text-zinc-500 text-xl xl:text-2xl font-semibold">{title}</h4>
+          <h2 className="text-3xl xl:text-5xl 2xl:text-5xl font-semibold leading-10 tracking-tight text-slate-800 sm:text-5xl sm:leading-none md:text-5xl">
             {subtitle}
           </h2>
           <div className="mt-5 sm:flex md:mt-8 gap-2">

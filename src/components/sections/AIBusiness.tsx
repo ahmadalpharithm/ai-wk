@@ -5,13 +5,16 @@ function AIBusiness() {
   return (
     <div className="inline-flex justify-start items-center gap-16">
     <div className="w-[491px] h-[534px] relative rounded-xl overflow-hidden">
-        {/* <div className="w-96 h-[466px] left-[25px] top-[34px] absolute bg-white rounded" /> */}
-         <Image className="w-96 h-[466px] left-[25px] top-[34px] absolute rounded" src={frame} width={1000} height={1000} alt="frame" />
+         <Image  className="rounded-xl object-cover max-h-[500px] xl:max-h-[650px] 2xl:max-h-[750px]" src={frame} width={1000} height={1000} alt="frame" />
     </div>
-    <div className="w-[732px] inline-flex flex-col justify-start items-start gap-10">
-        <div className="w-[686px] flex flex-col justify-start items-start gap-3.5">
-            <div className="w-[571px] justify-start text-slate-950 text-5xl font-semibold leading-[62px]">Tailored AI Solutions for Your Business</div>
-            <div className="self-stretch justify-start text-zinc-500 text-lg font-medium leading-loose">very company has unique challenges—our AI models adapt to meet your specific needs.</div>
+    <div className="max-w-[732px] inline-flex flex-col justify-start items-start gap-10">
+        <div className="flex flex-col justify-start items-start gap-3.5">
+        <h2 className="text-slate-950 text-5xl xl:text-6xl 2xl:text-7xl font-semibold leading-tight">
+                Tailored AI Solutions for Your Business
+            </h2>
+            <p className="text-zinc-500 text-lg xl:text-xl font-medium leading-loose">
+                very company has unique challenges—our AI models adapt to meet your specific needs.
+            </p>
         </div>
         <div className="self-stretch inline-flex justify-start items-center gap-7">
             <div className="w-96 inline-flex flex-col justify-start items-start gap-3.5">
@@ -22,8 +25,12 @@ function AIBusiness() {
                 </div>
                 <div className="self-stretch justify-start text-slate-950 text-xl font-semibold">Custom AI Model Tuning</div>
                 <div className="self-stretch justify-start text-zinc-500 text-lg font-medium leading-loose">Modify and fine-tune AI capabilities to align with your industry, market, and goals.</div>
+                <button className="w-28 p-2.5 cursor-pointer bg-slate-800 rounded outline outline-offset-[-0.97px] outline-slate-800 inline-flex justify-center items-center gap-1">
+                    <div className="justify-start text-white text-sm font-medium">Contact Us</div>
+                </button>
             </div>
-            <div className="w-20 h-0 origin-top-left rotate-90 outline outline-offset-[-0.30px] outline-slate-950"></div>
+            
+            <div className="w-20  origin-top-left rotate-90 outline outline-offset-[-0.30px] outline-slate-950"></div>
             <div className="w-72 inline-flex flex-col justify-start items-start gap-3.5">
                 <div className="w-6 h-6 relative overflow-hidden">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">

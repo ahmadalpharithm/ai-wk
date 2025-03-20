@@ -2,7 +2,7 @@ import React from 'react'
 
 function WorkforceComponent() {
   return (
-    <div className="relative h-screen sm:px-20 w-full bg-slate-950 overflow-hidden">
+    <div className="relative sm:px-20 w-full bg-slate-950 overflow-hidden">
       <div className="w-[1440px] h-[864px] relative bg-slate-950 overflow-hidden">
     <div className="w-[644px] left-[74px] top-[125px] absolute justify-start text-white text-5xl font-semibold leading-[62px]">Your Future Ready Hybrid Workforce</div>
     <div className="w-[774px] left-[74px] top-[264px] absolute justify-start text-white text-lg font-medium leading-loose">We create scalable, AI-driven teammates that handle the heavy lifting, enabling human teams to adapt, upskill, and thrive in an evolving workplace.</div>
@@ -45,7 +45,7 @@ function WorkforceComponent() {
     <div className="w-[1289px] left-[77px] top-[600px] absolute outline  outline-offset-[-0.30px] outline-white"></div>
     <div className="w-96 h-0 left-[458px] top-[390px] absolute origin-top-left rotate-90 outline  outline-white"></div>
     <div className="w-52 h-0 left-[972px] top-[390px] absolute origin-top-left rotate-90 outline  outline-white"></div>
-</div>
+    </div>
     </div>
   )
 }

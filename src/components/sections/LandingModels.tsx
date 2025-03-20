@@ -8,12 +8,12 @@ interface LandingModelsProps {
 
 const LandingModels: React.FC<LandingModelsProps> = ({ buttons, activeButton, setActiveButton }) => {
   return (
-    <section id="features" className="container mx-auto px-4 space-y-6 py-8 md:py-12 lg:py-16">
+    <section id="features" className="container mx-auto px-4 xl:px-16 2xl:px-24 space-y-6 py-8 md:py-12 lg:py-16 xl:py-20 2xl:py-24">
       <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-2 text-center">
-        <h2 className="max-w-[644px] text-center text-slate-800 text-3xl md:text-5xl font-semibold leading-[62px]">
+      <h2 className="max-w-[644px] text-center text-slate-800 text-4xl md:text-5xl xl:text-6xl 2xl:text-7xl font-semibold leading-[62px] xl:leading-[75px] 2xl:leading-[85px]">
           AI Models tailored for your business needs
         </h2>
-        <p className="max-w-[85%] w-[860px] sm:text-lg sm:leading-7 text-neutral-400 text-lg md:text-xl font-medium leading-9">
+        <p className="max-w-[85%] w-[860px] xl:w-[1100px] 2xl:w-[1300px] sm:text-lg xl:text-xl 2xl:text-2xl sm:leading-7 xl:leading-9 2xl:leading-10 text-neutral-400 font-medium">
           Leverage the power of AI to automate, analyze, and optimize your workflows. Our specialized models are designed to fit different business needs.
         </p>
         {/* Buttons Section */}

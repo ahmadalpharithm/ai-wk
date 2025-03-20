@@ -2,7 +2,7 @@ import React from 'react'
 
 function MobileWorkForceComponent() {
   return (
-    <div className="relative p-16 w-full bg-slate-950 overflow-hidden">
+    <div className="relative p-14 w-full bg-slate-950 overflow-hidden">
         <div className='flex flex-col justify-center items-center gap-3'>
         <h2 className="w-80 justify-start text-white text-3xl font-semibold">Your Future Ready Hybrid Workforce</h2>
         <p className="w-80 justify-start text-white text-sm font-medium leading-normal">We create scalable, AI-driven teammates that handle the heavy lifting, enabling human teams to adapt, upskill, and thrive in an evolving workplace.</p>
@@ -56,6 +56,7 @@ function MobileWorkForceComponent() {
         <div className="self-stretch h-0 outline outline-offset-[-0.30px] outline-white"></div>
         </div>
         </div>
+        
   </div>
   )
 }
