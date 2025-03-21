@@ -18,7 +18,7 @@ const modelData = {
     image: olympus,
     title: "Market Simulation",
     subtitle: "Smarter Market Insights, Faster Decisions",
-    href: "#"
+    href: "/olympus"
   },
   "Stock": {
     image: hermes,

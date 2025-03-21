@@ -4,7 +4,7 @@ function OrionComparison() {
   return (
     <div className="inline-flex justify-start items-center gap-20">
     <div className="w-[455px] inline-flex flex-col justify-start items-start gap-7">
-        <div className="w-48 justify-start"><span className="text-red-500 text-3xl font-semibold">Orion </span><span className="text-stone-900 text-3xl font-semibold">vs Publicly Available Options</span></div>
+        <div className="w-56 justify-start"><span className="text-red-500 text-3xl font-semibold">Orion </span><span className="text-stone-900 text-3xl font-semibold">vs Publicly Available Options</span></div>
         <div className="self-stretch flex flex-col justify-start items-start gap-8">
             <div className="self-stretch inline-flex justify-start items-center gap-3">
                 <div className="w-5 h-5 relative overflow-hidden">

@@ -9,7 +9,7 @@ import OrionKeyFeatures from './_components/OrionKeyFeatures'
 import OrionFAQ from './_components/OrionFaq'
 
 
-function LucaHomePage() {
+function OrionHomePage() {
   return (
     <>
         <OrionLandingHeroSection/>
@@ -33,4 +33,4 @@ function LucaHomePage() {
   )
 }
 
-export default LucaHomePage
+export default OrionHomePage
