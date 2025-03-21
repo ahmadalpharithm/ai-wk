@@ -14,14 +14,14 @@ interface LandingModelListProps {
 
 const LandingModelList: React.FC<LandingModelListProps> = ({ modelData, activeButton }) => {
   const swiperRef = useRef<any>(null);
-  const buttons = Object.keys(modelData);
+  const buttons = Object.keys(modelData); // Keep button order fixed
 
   useEffect(() => {
-    const activeIndex = buttons.indexOf(activeButton);
+    const activeIndex = buttons.indexOf(activeButton); // Ensure correct index
     if (swiperRef.current && activeIndex !== -1) {
       swiperRef.current.swiper.slideTo(activeIndex);
     }
-  }, [activeButton]);
+  }, [activeButton, buttons]);
 
   return (
     <div className="w-full max-w-6xl mx-auto">
@@ -40,11 +40,11 @@ const LandingModelList: React.FC<LandingModelListProps> = ({ modelData, activeBu
           modifier: 2.5,
           slideShadows: true,
         }}
-        loop={true}
+        loop={false} // Disable loop to maintain correct order
         className="mySwiper"
       >
-        {buttons.map((key) => (
-          <SwiperSlide key={key} className="transition-transform duration-300">
+        {buttons.map((button) => (
+          <SwiperSlide key={button} className="transition-transform duration-300">
             {({ isActive }) => (
               <div
                 className={`transition-all duration-500 ease-in-out ${
@@ -54,10 +54,10 @@ const LandingModelList: React.FC<LandingModelListProps> = ({ modelData, activeBu
                 }`}
               >
                 <LandingModelCard
-                  image={modelData[key].image}
-                  title={modelData[key].title}
-                  subtitle={modelData[key].subtitle}
-                  href={modelData[key].href}
+                  image={modelData[button].image}
+                  title={modelData[button].title}
+                  subtitle={modelData[button].subtitle}
+                  href={modelData[button].href}
                 />
               </div>
             )}
