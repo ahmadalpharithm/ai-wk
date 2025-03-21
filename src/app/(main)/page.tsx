@@ -4,10 +4,8 @@
 import React, { useState } from 'react';
 import LandingHeroSection from "@/components/sections/LandingHeroSection";
 import LandingModels from "@/components/sections/LandingModels";
-import LandingModelCard from "@/components/sections/LandingModelCard";
 import { douglas, hermes, olympus, orion, luca } from '@/assets/models';
 import WorkforceComponent from '@/components/sections/WorkforceComponent';
-import MobileLandingModelCard from '@/components/sections/MobileLandingModelCard';
 import MobileWorkForceComponent from '@/components/sections/MobileWorkForceComponent';
 import AIBusiness from '@/components/sections/AIBusiness';
 import MobileAIBusiness from '@/components/sections/MobileAIBusiness';

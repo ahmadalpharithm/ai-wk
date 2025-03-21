@@ -28,7 +28,7 @@ const LandingModelList: React.FC<LandingModelListProps> = ({ modelData, activeBu
       <Swiper
         ref={swiperRef}
         modules={[Pagination, EffectCoverflow]}
-        spaceBetween={30}
+        spaceBetween={300}
         slidesPerView={1.4}
         centeredSlides={true}
         grabCursor={true}
@@ -37,7 +37,7 @@ const LandingModelList: React.FC<LandingModelListProps> = ({ modelData, activeBu
           rotate: 0,
           stretch: 0,
           depth: 150,
-          modifier: 2.5,
+          modifier: 0.5,
           slideShadows: true,
         }}
         loop={false} // Disable loop to maintain correct order
@@ -50,7 +50,7 @@ const LandingModelList: React.FC<LandingModelListProps> = ({ modelData, activeBu
                 className={`transition-all duration-500 ease-in-out ${
                   isActive
                     ? "transform translate-y-[-18px] scale-105"
-                    : "transform translate-y-20 opacity-80"
+                    : "transform translate-y-20"
                 }`}
               >
                 <LandingModelCard
