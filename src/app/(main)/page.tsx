@@ -11,7 +11,7 @@ import MobileLandingModelCard from '@/components/sections/MobileLandingModelCard
 import MobileWorkForceComponent from '@/components/sections/MobileWorkForceComponent';
 import AIBusiness from '@/components/sections/AIBusiness';
 import MobileAIBusiness from '@/components/sections/MobileAIBusiness';
-
+import LandingModelList from '@/components/sections/LandingModelList';
 
 const modelData = {
   "Market Simulation": {
@@ -58,7 +58,7 @@ export default function HomePage() {
       {/* Larger screen model card display */}
       <div className="hidden lg:flex w-full justify-center">
         {/* @ts-ignore */}
-        <LandingModelCard {...modelData[activeButton]} className="max-w-4xl xl:max-w-5xl 2xl:max-w-6xl" />
+        <LandingModelList modelData={modelData} activeButton={activeButton} />
       </div>
       {/* AI Business Section - Visible on larger screens */}
       <div className="hidden lg:block py-10 xl:py-16 2xl:py-20">
