@@ -28,7 +28,7 @@ const LandingModelList: React.FC<LandingModelListProps> = ({ modelData, activeBu
       <Swiper
         ref={swiperRef}
         modules={[Pagination, EffectCoverflow]}
-        spaceBetween={100}
+        spaceBetween={30}
         slidesPerView={1.7}
         centeredSlides={true}
         grabCursor={true}
