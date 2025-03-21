@@ -30,7 +30,7 @@ const modelData = {
     image: orion,
     title: "Investment Analyst",
     subtitle: "Assess risks, find investment opportunities, and get AI financial advice.",
-    href: "#"
+    href: "/orion"
   },
   "Accountant": {
     image: luca,
@@ -47,7 +47,7 @@ const modelData = {
 };
 
 export default function HomePage() {
-  const [activeButton, setActiveButton] = useState('Market Simulation');
+  const [activeButton, setActiveButton] = useState('Investment Analyst');
   const buttons = Object.keys(modelData);
 
   return (
