@@ -1,46 +1,92 @@
-import React from 'react'
+"use client"
+
+import React, { useState } from "react";
+import Image, { StaticImageData } from "next/image";
+import { accountants, freelancers, smallBusiness, companies } from "@/assets/luca";
+
+const sections = [
+  {
+    title: "Small business owners",
+    description: "Looking for an affordable way to manage finances without hiring an accountant.",
+    image: accountants,
+  },
+  {
+    title: "Freelancers & self-employed",
+    description: "needing real-time financial tracking.",
+    image: freelancers,
+  },
+  {
+    title: "Professional accountants",
+    description: "seeking to enhance productivity and manage multiple clients efficiently.",
+    image: smallBusiness,
+  },
+  {
+    title: "Companies",
+    description: "requiring structured financial records for tax reporting, auditing, and planning..",
+    image: companies,
+  },
+];
 
 function LucaSmartAccounting() {
+  const [activeIndex, setActiveIndex] = useState<number | null>(null);
+  const [selectedImage, setSelectedImage] = useState<StaticImageData>(accountants); // Default image
+
+  const handleToggle = (index: number, image: string) => {
+    setActiveIndex(activeIndex === index ? null : index); // Toggle active section
+         // @ts-ignore
+    setSelectedImage(image); // Update side image
+  };
+
   return (
     <div className="w-full h-[643px] relative bg-violet-100 overflow-hidden">
-    <div className="w-[521px] h-96 left-[832px] top-[96px] absolute bg-white rounded-xl" />
-    <div className="w-96 left-[75px] top-[73px] absolute justify-start text-stone-900 text-4xl font-bold">Smart Accounting for Everyone</div>
-    <div className="w-[579px] left-[75px] top-[169px] absolute inline-flex flex-col justify-start items-start">
-        <div className="self-stretch py-6 border-b border-stone-900 inline-flex justify-start items-center gap-14">
-            <div className="w-[500px] justify-start"><span className="text-stone-900 text-xl font-semiboldleading-9">Small business owners</span><span className="text-stone-900 text-xl font-normalleading-9"> </span><span className="text-stone-900 text-xl font-lightleading-9">looking for an affordable way to manage finances without hiring an accountant.</span></div>
-            <div className="w-0 h-5 relative origin-top-left -rotate-90 overflow-hidden">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-            <path d="M10 16.6665V3.33317M10 3.33317L15 8.33317M10 3.33317L5 8.33317" stroke="#1E1E1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
+      {/* Side Image */}
+      <Image
+        src={selectedImage}
+        alt="Accounting section"
+        width={521}
+        height={384}
+        className="absolute left-[832px] top-[96px] rounded-xl transition-opacity duration-300"
+      />
+
+      {/* Title */}
+      <div className="w-96 left-[75px] top-[73px] absolute text-stone-900 text-4xl font-bold">
+        Smart Accounting for Everyone
+      </div>
+
+      {/* List Section */}
+      <div className="w-[579px] left-[75px] top-[169px] absolute flex flex-col gap-4">
+        {sections.map((item, index) => (
+          <div
+            key={index}
+            className="py-4 border-b border-stone-900 cursor-pointer"
+            // @ts-ignore
+            onClick={() => handleToggle(index, item.image)}
+          >
+            {/* Title Row */}
+            <div className="flex justify-between items-center">
+              <span className="text-stone-900 text-xl font-semibold">{item.title}</span>
+              <div className="w-5 h-5">
+                {activeIndex === index ? (
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M10 16.6665V3.33317M10 3.33317L15 8.33317M10 3.33317L5 8.33317" stroke="#1E1E1E" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                ) : (
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M10 3.3335V16.6668M10 16.6668L15 11.6668M10 16.6668L5 11.6668" stroke="#1E1E1E" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                )}
+              </div>
             </div>
-        </div>
-        <div className="self-stretch py-6 border-b border-stone-900 inline-flex justify-between items-center">
-            <div className="justify-start"><span className="text-stone-900 text-xl font-semiboldleading-9">Freelancers & self-employed</span><span className="text-stone-900 text-xl font-normalleading-9"> </span></div>
-            <div className="w-0 h-5 relative origin-top-left rotate-90 overflow-hidden">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                <path d="M10 3.3335V16.6668M10 16.6668L15 11.6668M10 16.6668L5 11.6668" stroke="#1E1E1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </div>
-        </div>
-        <div className="self-stretch py-6 border-b border-stone-900 inline-flex justify-between items-center">
-            <div className="justify-start"><span className="text-stone-900 text-xl font-semiboldleading-9">Professional accountants</span><span className="text-stone-900 text-xl font-normalleading-9"> </span></div>
-            <div className="w-0 h-5 relative origin-top-left rotate-90 overflow-hidden">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-            <path d="M10 3.3335V16.6668M10 16.6668L15 11.6668M10 16.6668L5 11.6668" stroke="#1E1E1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-            </div>
-        </div>
-        <div className="self-stretch py-6 border-b border-stone-900 inline-flex justify-between items-center">
-            <div className="justify-start"><span className="text-stone-900 text-xl font-semiboldleading-9">Companies</span><span className="text-stone-900 text-xl font-normalleading-9"> </span></div>
-            <div className="w-0 h-5 relative origin-top-left rotate-90 overflow-hidden">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-            <path d="M10 3.3335V16.6668M10 16.6668L15 11.6668M10 16.6668L5 11.6668" stroke="#1E1E1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-            </div>
-        </div>
+
+            {/* Description (only show if active) */}
+            {activeIndex === index && (
+              <p className="mt-2 text-stone-900 text-lg font-light">{item.description}</p>
+            )}
+          </div>
+        ))}
+      </div>
     </div>
-</div>
-  )
+  );
 }
 
-export default LucaSmartAccounting
+export default LucaSmartAccounting;
