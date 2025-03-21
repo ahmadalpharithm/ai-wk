@@ -7,8 +7,10 @@ import newHeroImage from "./newHero.jpg"
 import newLogo from "./newLogo.png"
 import frame from "./frame.png"
 import blackLogo from "./blackLogo.png"
+import aiFrame from "./ai-frame.png"
 export {
     subHero,
+    aiFrame,
     blackLogo,
     frame,
     newLogo,

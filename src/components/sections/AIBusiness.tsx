@@ -1,11 +1,13 @@
 import React from 'react'
 import { frame } from '@/assets'
 import Image from 'next/image'
+import { aiFrame } from '@/assets'
+
 function AIBusiness() {
   return (
     <div className="inline-flex justify-start items-center gap-16">
     <div className="w-[491px] h-[534px] relative rounded-xl overflow-hidden">
-         <Image  className="rounded-xl object-cover max-h-[500px] xl:max-h-[650px] 2xl:max-h-[750px]" src={frame} width={1000} height={1000} alt="frame" />
+         <Image  className="rounded-xl object-cover max-h-[500px] xl:max-h-[650px] 2xl:max-h-[750px]" src={aiFrame} width={1000} height={1000} alt="frame" />
     </div>
     <div className="max-w-[732px] inline-flex flex-col justify-start items-start gap-10">
         <div className="flex flex-col justify-start items-start gap-3.5">
