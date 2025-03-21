@@ -24,12 +24,12 @@ const LandingModelList: React.FC<LandingModelListProps> = ({ modelData, activeBu
   }, [activeButton, buttons]);
 
   return (
-    <div className="max-w-7xl">
+    <div className="max-w-full flex justify-center items-center mx-auto">
       <Swiper
         ref={swiperRef}
         modules={[Pagination, EffectCoverflow]}
-        spaceBetween={300}
-        slidesPerView={1.4}
+        spaceBetween={100}
+        slidesPerView={1.7}
         centeredSlides={true}
         grabCursor={true}
         effect="coverflow"
@@ -38,13 +38,13 @@ const LandingModelList: React.FC<LandingModelListProps> = ({ modelData, activeBu
           stretch: 0,
           depth: 150,
           modifier: 0.5,
-          slideShadows: true,
+          slideShadows: false,
         }}
         loop={false} // Disable loop to maintain correct order
         className="mySwiper"
       >
         {buttons.map((button) => (
-          <SwiperSlide key={button} className="transition-transform duration-300">
+          <SwiperSlide key={button} className="flex justify-center items-center mx-auto transition-transform duration-300">
             {({ isActive }) => (
               <div
                 className={`transition-all duration-500 ease-in-out ${

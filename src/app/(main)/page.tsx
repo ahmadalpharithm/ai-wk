@@ -53,13 +53,14 @@ export default function HomePage() {
   return (
     <>
       <LandingHeroSection />
-      <div className="px-4 md:px-20 xl:px-32 2xl:px-40 md:pb-16 xl:pb-24 2xl:pb-32 flex flex-col justify-center items-center">
       <LandingModels buttons={buttons} activeButton={activeButton} setActiveButton={setActiveButton} />
       {/* Larger screen model card display */}
       <div className="hidden lg:flex w-full justify-center">
         {/* @ts-ignore */}
         <LandingModelList modelData={modelData} activeButton={activeButton} />
       </div>
+      <div className="px-4 md:px-16 xl:px-28 2xl:px-32 md:pb-16 xl:pb-24 2xl:pb-32 flex flex-col justify-center items-center">
+
       {/* AI Business Section - Visible on larger screens */}
       <div className="hidden lg:block py-10 xl:py-16 2xl:py-20">
         <AIBusiness />

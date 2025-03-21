@@ -12,7 +12,7 @@ interface LandingModelCardProps {
 
 const LandingModelCard: React.FC<LandingModelCardProps> = ({ image, title, subtitle, href }) => {
   return (
-    <div className="w-[900px] relative bg-stone-100 rounded-xl overflow-hidden h-[550px]">
+    <div className="w-[900px] relative bg-stone-100 rounded-xl overflow-hidden h-[580px]">
       {/* Image Section */}
       <div className="w-[520.60px] h-[513.77px] left-[550.40px] top-[66.50px] absolute rounded-xl overflow-hidden">
         <Image src={image} width={1000} height={1000} alt={title} />

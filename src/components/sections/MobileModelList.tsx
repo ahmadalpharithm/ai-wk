@@ -27,7 +27,7 @@ const MobileLandingModelList: React.FC<LandingModelListProps> = ({ modelData, ac
       <Swiper
         ref={swiperRef}
         modules={[Pagination, EffectCoverflow]}
-        spaceBetween={30}
+        spaceBetween={100}
         slidesPerView={1.4}
         centeredSlides={true}
         grabCursor={true}
