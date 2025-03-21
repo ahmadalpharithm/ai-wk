@@ -14,10 +14,10 @@ interface LandingModelListProps {
 
 const LandingModelList: React.FC<LandingModelListProps> = ({ modelData, activeButton }) => {
   const swiperRef = useRef<any>(null);
-  const buttons = Object.keys(modelData); // Keep button order fixed
+  const buttons = Object.keys(modelData); 
 
   useEffect(() => {
-    const activeIndex = buttons.indexOf(activeButton); // Ensure correct index
+    const activeIndex = buttons.indexOf(activeButton); 
     if (swiperRef.current && activeIndex !== -1) {
       swiperRef.current.swiper.slideTo(activeIndex);
     }
@@ -49,7 +49,7 @@ const LandingModelList: React.FC<LandingModelListProps> = ({ modelData, activeBu
               <div
                 className={`transition-all duration-500 ease-in-out ${
                   isActive
-                    ? "transform translate-y-[-16px] scale-105"
+                    ? "transform translate-y-[-18px] scale-105"
                     : "transform translate-y-20 opacity-80"
                 }`}
               >

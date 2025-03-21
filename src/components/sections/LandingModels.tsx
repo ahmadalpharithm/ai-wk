@@ -29,7 +29,7 @@ const LandingModels: React.FC<LandingModelsProps> = ({ buttons, activeButton, se
                   : "text-neutral-400"
               }`}
             >
-              <div className="text-base font-semibold">{button}</div>
+              <div className="text-base whitespace-nowrap font-semibold">{button}</div>
             </button>
           ))}
         </div>
