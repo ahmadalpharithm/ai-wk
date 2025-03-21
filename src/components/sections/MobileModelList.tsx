@@ -4,27 +4,26 @@ import { Pagination, EffectCoverflow } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/effect-coverflow";
-
-import LandingModelCard from "./LandingModelCard";
+import MobileLandingModelCard from "./MobileLandingModelCard";
 
 interface LandingModelListProps {
   modelData: Record<string, { image: string; title: string; subtitle: string; href: string }>;
   activeButton: string;
 }
 
-const LandingModelList: React.FC<LandingModelListProps> = ({ modelData, activeButton }) => {
+const MobileLandingModelList: React.FC<LandingModelListProps> = ({ modelData, activeButton }) => {
   const swiperRef = useRef<any>(null);
-  const buttons = Object.keys(modelData); // Keep button order fixed
+  const buttons = Object.keys(modelData);
 
   useEffect(() => {
-    const activeIndex = buttons.indexOf(activeButton); // Ensure correct index
+    const activeIndex = buttons.indexOf(activeButton); 
     if (swiperRef.current && activeIndex !== -1) {
       swiperRef.current.swiper.slideTo(activeIndex);
     }
   }, [activeButton, buttons]);
 
   return (
-    <div className="max-w-7xl">
+    <div className="max-w-md">
       <Swiper
         ref={swiperRef}
         modules={[Pagination, EffectCoverflow]}
@@ -49,11 +48,11 @@ const LandingModelList: React.FC<LandingModelListProps> = ({ modelData, activeBu
               <div
                 className={`transition-all duration-500 ease-in-out ${
                   isActive
-                    ? "transform translate-y-[-16px] scale-105"
-                    : "transform translate-y-20 opacity-80"
+                    ? "transform translate-y-[-10px] z-10 scale-105"
+                    : "transform translate-y-16 opacity-80"
                 }`}
               >
-                <LandingModelCard
+                <MobileLandingModelCard
                   image={modelData[button].image}
                   title={modelData[button].title}
                   subtitle={modelData[button].subtitle}
@@ -68,4 +67,4 @@ const LandingModelList: React.FC<LandingModelListProps> = ({ modelData, activeBu
   );
 };
 
-export default LandingModelList;
+export default MobileLandingModelList;

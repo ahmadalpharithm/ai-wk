@@ -12,6 +12,8 @@ import MobileWorkForceComponent from '@/components/sections/MobileWorkForceCompo
 import AIBusiness from '@/components/sections/AIBusiness';
 import MobileAIBusiness from '@/components/sections/MobileAIBusiness';
 import LandingModelList from '@/components/sections/LandingModelList';
+import MobileLandingModelList from '@/components/sections/MobileModelList';
+
 
 const modelData = {
   "Market Simulation": {
@@ -67,7 +69,7 @@ export default function HomePage() {
       {/* Mobile model card display */}
       <div className="block lg:hidden">
         {/* @ts-ignore */}
-        <MobileLandingModelCard {...modelData[activeButton]} />
+        <MobileLandingModelList modelData={modelData} activeButton={activeButton}  />
       </div>
       <div className="block lg:hidden">
         <MobileAIBusiness />
